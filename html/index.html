@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>文明游戏，健康上网</title>
+		<style type="text/css">			
+		    html,body{
+		        width:100%;
+		      	height:100%;
+		      	margin:0px;
+				background-color: black;
+		    }
+			.title{
+				color: white;
+				text-align:center;
+				font-size: 40px;
+				margin:5% auto;
+			}
+			.content{
+			    display:flex;
+				position: absolute;
+			}
+			.lines{
+				margin:auto 40px;
+			}
+		</style>
+		<script type="text/javascript">
+			function boy1(){
+			    var width = document.getElementById("boy").width;
+				var height = document.getElementById("boy").height;
+			    document.getElementById("boy").width = width + 30;
+				document.getElementById("boy").height = height + 30;
+			}
+			function boy2(){
+			    var width = document.getElementById("boy").width;
+				var height = document.getElementById("boy").height;
+			    document.getElementById("boy").width = width -30;
+				document.getElementById("boy").height = height - 30;
+			}
+			function edg1(){
+			    var width = document.getElementById("edg").width;
+				var height = document.getElementById("edg").height;
+			    document.getElementById("edg").width = width + 30;
+				document.getElementById("edg").height = height + 30;
+			}
+			function edg2(){
+			    var width = document.getElementById("edg").width;
+				var height = document.getElementById("edg").height;
+			    document.getElementById("edg").width = width -30;
+				document.getElementById("edg").height = height - 30;
+			}
+		</script>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+	</head>
+
+	<body>
+		<p class="title">文明游戏，健康上网</p>
+		<a id = "sp" class="title" href="index-video.html">查看宣传视频</a>
+		<div class="content">
+			<div class="lines"><a href="index-boy.html" title="反面案例"><img id="boy" src="res/boy.png" onmouseover="boy1()" onmouseleave="boy2()"/></a></div>
+			<div class="lines"><a href="index-edg.html" title="正面案例"><img id="edg" src="res/edg.png" onmouseover="edg1()" onmouseleave="edg2()"/></a></div>
+		</div>
+	</body>
+</html>
